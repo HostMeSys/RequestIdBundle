@@ -1,0 +1,49 @@
+{
+    "name": "hostme/request-id-bundle",
+    "license": "proprietary",
+    "type":        "symfony-bundle",
+    "description": "Include a correlation identifier in all requests.",
+    "homepage":    "https://hostme.fr",
+    "keywords":    [
+        "symfony",
+        "request id",
+        "correlation id"
+    ],
+    "authors": [
+        {
+            "name": "Sébastien DIEUNIDOU",
+            "email": "seb@hostme.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit":              "^9.5",
+        "friendsofphp/php-cs-fixer":    "^3.0",
+        "phpstan/phpstan":              "^0.12.91",
+        "phpstan/phpstan-symfony":      "^0.12.41",
+        "phpstan/extension-installer":  "^1.1"
+    },
+    "scripts": {
+        "csfixer": "vendor/bin/php-cs-fixer fix --verbose --dry-run",
+        "csfixer-fix": "vendor/bin/php-cs-fixer fix --verbose",
+        "phpunit": "vendor/bin/phpunit",
+        "phpstan": "vendor/bin/phpstan"
+    },
+    "autoload": {
+        "psr-4": {
+            "HostMe\\RequestIdBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HostMe\\RequestIdBundle\\Tests\\": "Tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
