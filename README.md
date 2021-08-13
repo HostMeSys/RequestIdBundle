@@ -1,7 +1,7 @@
 RequestIdBundle
 ==============
 
-Add in `src/Kernel.php`:
+Add in `config/bundles.php`:
 
 ```php
 <?php
