@@ -12,7 +12,7 @@ Add in `config/bundles.php`:
 Config in `packages/hostme_request_id.yaml`:
 
 ```yaml
-hostme_request_id:
+request_id:
   enable: true # default: true
   enable_monolog: true # default: true
   trust_request_header: true # default: true
