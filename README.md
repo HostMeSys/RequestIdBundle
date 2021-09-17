@@ -9,7 +9,7 @@ Add in `config/bundles.php`:
     HostMe\RequestIdBundle\RequestIdBundle::class => ['all' => true],
 ```
 
-Config in `packages/hostme_request_id.yaml`:
+Config in `packages/request_id.yaml`:
 
 ```yaml
 request_id:
