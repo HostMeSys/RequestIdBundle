@@ -17,9 +17,9 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "symfony/framework-bundle":     "^5.3",
-        "symfony/security-bundle":      "^5.3",
-        "symfony/options-resolver":     "^5.3",
+        "symfony/framework-bundle":     "^5.4 || ^6.0",
+        "symfony/security-bundle":      "^5.4 || ^6.0",
+        "symfony/options-resolver":     "^5.4 || ^6.0",
         "symfony/monolog-bundle":       "^3.4",
         "ramsey/uuid": "^4.2"
     },
