@@ -9,6 +9,7 @@
 
 namespace HostMe\RequestIdBundle\Logger;
 
+use Monolog\LogRecord;
 use Symfony\Component\HttpFoundation\RequestStack;
 
 class RequestIdProcessor
@@ -25,7 +26,7 @@ class RequestIdProcessor
         $this->headerName = $headerName;
     }
 
-    public function __invoke(array $record): array
+    public function __invoke(LogRecord $record): LogRecord
     {
         $request = $this->requestStack->getCurrentRequest();
         if (null === $request) {
@@ -34,7 +35,7 @@ class RequestIdProcessor
 
         $requestId = $request->headers->get($this->headerName);
         if (null !== $requestId) {
-            $record['extra']['request_id'] = $requestId;
+            $record->extra['request_id'] = $requestId;
         }
 
         return $record;
