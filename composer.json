@@ -18,8 +18,8 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "symfony/framework-bundle":     "^6.1",
-        "symfony/security-bundle":      "^6.1"",
-        "symfony/options-resolver":     "^6.1"",
+        "symfony/security-bundle":      "^6.1",
+        "symfony/options-resolver":     "^6.1",
         "symfony/monolog-bundle":       "^3.7",
         "ramsey/uuid": "^4.2"
     },
